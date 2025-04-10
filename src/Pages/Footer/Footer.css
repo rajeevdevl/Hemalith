@@ -1,0 +1,66 @@
+footer {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 40px 100px;
+
+  .footer-heading {
+    h2 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: var(--main-color);
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+
+    h4 {
+      font-size: 2.5rem;
+      margin-top: 0px;
+    }
+  }
+
+  .footer-body {
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-color);
+    margin-top: 2rem;
+    font-weight: bold;
+
+    h5 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    li {
+      color: #fff;
+      font-weight: normal;
+      margin: 15px 0;
+
+      &:hover {
+        color: var(--main-color);
+        cursor: pointer;
+      }
+    }
+
+    .footer-body_social ul {
+      display: flex;
+      gap: 15px;
+    }
+
+    .Address {
+      color: #fff;
+      .address_company {
+        font-size: 1.2rem;
+        font-style: normal;
+
+        &:hover {
+          color: var(--main-color);
+        }
+      }
+
+      small {
+        font-size: 12px;
+        font-style: normal;
+      }
+    }
+  }
+}

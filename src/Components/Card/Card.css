@@ -1,0 +1,91 @@
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: var(--main-color); */
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    width: 25rem;
+    height: 10rem;
+    position: relative;
+    /* border-radius: 10px; */
+    transition: 5s all linear;
+}
+
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.card::after,.card::before{
+    content: '';
+    --angle:0deg;
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    /* background-color: red; */
+    top:50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    background-image: conic-gradient(from var(--angle), transparent 50%, var(--secondary-color));
+    animation: 3s spin linear infinite;
+}
+
+.card::before{
+    filter: blur(.4rem);
+    opacity: 0;
+}
+
+@keyframes spin {
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+}
+
+.icon-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    /* background-color: var(--main-color); */
+    height: 100%;
+    
+    /* overflow: hidden; */
+
+    p{
+        font-size: 30px;
+    }
+}
+
+.icon-style{
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    
+}
+
+.card-box{
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    width: 70%;
+    height: 100%;
+    /* background-color: #fff; */
+    /* color: #fff; */
+    
+    
+}
+
+.card-box h3{
+    font-size: 1.5rem;
+}

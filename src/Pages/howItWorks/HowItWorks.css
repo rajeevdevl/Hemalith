@@ -1,0 +1,105 @@
+.how-it-works {
+  background-color: var(--secondary-color);
+  margin: -300px 0;
+  /* z-index: -1; */
+  position: relative;
+  padding: 170px 100px;
+  text-align: center;
+
+  .how-it-works_heading {
+    font-size: 3rem;
+    color: #fff;
+  }
+
+  .how-it-works_span {
+    display: inline-block;
+    color: var(--main-color);
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 2px;
+      background-color: var(--main-color);
+      top: 12px;
+      right: -50%;
+    }
+  }
+
+  .how-it-works_steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #fff;
+    justify-content: space-between;
+    margin-top: 3rem;
+
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      p {
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-wrap: wrap;
+      }
+    }
+
+    .icon-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: var(--main-color);
+      background: linear-gradient(to right, var(--main-color) 50%, #fff 50%);
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: all 0.5s ease-out;
+      position: relative;
+
+      &:hover {
+        background-position: left bottom;
+      }
+
+      &.icon-box1::after,
+      &.icon-box2::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        border: 1px dashed #fff;
+        top: 50%;
+        right: 0;
+        left: 130%;
+        flex-wrap: wrap;
+      }
+
+      .icon_box--icon {
+        font-size: 5rem;
+        color: var(--secondary-color);
+      }
+    }
+  }
+
+  .how-it-works_cta {
+    margin-top: 100px;
+
+    button {
+      cursor: pointer;
+      background: linear-gradient(to right, #dc3545 50%, var(--main-color) 50%);
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: all 0.5s ease-out;
+
+      &:hover {
+        background-position: left bottom;
+        color: #fff;
+      }
+    }
+  }
+}

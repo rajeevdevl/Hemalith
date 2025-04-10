@@ -1,0 +1,143 @@
+.hero {
+  height: 80vh;
+  background: linear-gradient(to right top, #040303d8 50%, #44e4fe 50%),
+    url("../assets/Hemalith_cover.png");
+  background-size: 100% 100%, cover;
+  /* First layer full width, second layer covers */
+  background-position: left, center;
+  /* Gradient on left, image centered */
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+main {
+  margin: 0 auto;
+  padding: 200px 10px;
+}
+
+.hero_text {
+  position: absolute;
+  top: 350px;
+  color: #fff;
+}
+
+.main-text {
+  font-size: 3.5rem;
+  color: #fff;
+  /* position: relative; */
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.secondary-text {
+  font-size: 1.5rem;
+  letter-spacing: 4.4px;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  right: 10px;
+  top: 60px;
+}
+
+.secondary-text::before {
+  content: "";
+  width: 310px;
+  height: 5px;
+  position: absolute;
+  top: 17px;
+  left: -313px;
+  background-color: var(--main-color);
+  bottom: 0;
+}
+
+.truck_hero {
+  position: absolute;
+  right: 0;
+  top: 160px;
+}
+
+@media screen and (max-width: 1375px) {
+  .main-text {
+    font-size: 3rem;
+  }
+
+  .truck_hero {
+    width: 700px;
+    top: 230px;
+  }
+
+  .secondary-text::before {
+    width: 230px;
+    left: -240px;
+  }
+}
+
+@media screen and (max-width: 1184px) {
+  .main-text {
+    font-size: 3rem;
+  }
+
+  .truck_hero {
+    width: 650px;
+    top: 270px;
+  }
+  .secondary-text {
+    font-size: 1.2rem;
+  }
+  .secondary-text::before {
+    width: 260px;
+    left: -270px;
+    top: 12px;
+  }
+}
+
+@media screen and (max-width: 1122px) {
+  .secondary-text::before {
+    background-color: var(--secondary-color);
+  }
+  .main-text {
+    font-size: 2.5rem;
+  }
+
+  .truck_hero {
+    width: 600px;
+    top: 300px;
+  }
+  .secondary-text {
+    font-size: 1rem;
+  }
+  .secondary-text::before {
+    width: 209px;
+    left: -215px;
+    top: 10px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .hero_text {
+      top: 100px;
+    }
+
+    .hero_text,
+    .secondary-text {
+      h1,
+      h2 {
+        color: var(--secondary-color);
+      }
+    }
+
+    .truck_hero {
+      right: unset;
+      top: 240px;
+    }
+  }
+}
