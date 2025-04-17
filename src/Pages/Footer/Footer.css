@@ -21,6 +21,7 @@ footer {
   .footer-body {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     color: var(--main-color);
     margin-top: 2rem;
     font-weight: bold;
@@ -62,5 +63,16 @@ footer {
         font-style: normal;
       }
     }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer_box4 {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  ul.footer_box4_links {
+    display: flex;
+    justify-content: center;
   }
 }

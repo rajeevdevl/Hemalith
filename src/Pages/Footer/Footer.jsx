@@ -12,20 +12,20 @@ const Footer = () => {
         <h4>India's trusted transportation services</h4>
       </div>
       <div className="footer-body">
-        <div>
+        <div className="footer_box1">
           <h5>About</h5>
           <ul>
             <li>About</li>
           </ul>
         </div>
-        <div>
+        <div className="footer_box2">
           <h5>Services</h5>
           <ul>
             <li>For User</li>
             <li>For organization</li>
           </ul>
         </div>
-        <div>
+        <div className="footer_box3">
           <h5>Transport Service</h5>
           <ul>
             <li>Delhi</li>
@@ -33,8 +33,8 @@ const Footer = () => {
             <li>UP</li>
           </ul>
         </div>
-        <div className="footer-body_social">
-          <ul>
+        <div className="footer-body_social footer_box4">
+          <ul className="footer_box4_links">
             <li>
               <a href="#">
                 <FontAwesomeIcon

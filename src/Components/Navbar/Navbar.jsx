@@ -7,49 +7,6 @@ import { faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-    // <nav className="">
-    //   <div className="logo">
-    //     <img src={Logo} alt="Hemalith Logo" className="size-30" />
-    //   </div>
-    //   <div className="navigations">
-    //     <div className="top_bar">
-    //       <ul>
-    //         <li>address</li>
-    //         <li>time</li>
-    //         <li>phone</li>
-    //       </ul>
-    //     </div>
-    //     <ul className="navigation_links">
-    //       <li>
-    //         <a href="#" className="font-medium text-sky-600 hover:underline">
-    //           Home
-    //         </a>
-    //       </li>
-    //       <li>
-    //         <a href="#" className="font-medium text-sky-600 hover:underline">
-    //           About
-    //         </a>
-    //       </li>
-    //       <li>
-    //         <a href="#" className="font-medium text-sky-600 hover:underline">
-    //           Services
-    //         </a>
-    //       </li>
-    //       <li>
-    //         <a href="#" className="font-medium text-sky-600 hover:underline">
-    //           Contact
-    //         </a>
-    //       </li>
-    //       <li>
-    //         <a href="#" className="font-medium text-sky-600 hover:underline">
-    //           Login
-    //         </a>
-    //       </li>
-    //     </ul>
-    //   </div>
-
-    //   <div className="connect">Get in touch</div>
-    // </nav>
     <nav className="">
       <div className="logo">
         <img src={Logo} alt="Hemalith Logo" className="size-30" />
